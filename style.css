@@ -1307,3 +1307,157 @@
         font-size: 52px;
     }
 }
+
+@media (max-width: 470px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 13px;
+    }
+
+    .contentTextDarkMode{
+        font-size: 13px;
+    }
+
+    .boldText{
+        font-size: 20px;
+    }
+  
+    .optionsSection{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 50px;
+    }
+
+    .options{
+        height: 290px;
+        width: 320px;
+    }  
+    
+    .optionsDarkMode{
+        height: 290px;
+        width: 320px;
+    }
+
+    .boxHeader{
+        font-size: 26px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 26px;
+    }
+
+    .boxdescription{
+        font-size: 21px;
+    }
+
+    .boxdescriptionDarkMode{
+        font-size: 21px;
+    }
+
+    .midSection{
+        font-size: 48px;
+    }
+
+    .midSectionDarkMode{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 430px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 12px;
+    }
+
+    .contentTextDarkMode{
+        font-size: 12px;
+    }
+
+    .boldText{
+        font-size: 18px;
+    }
+  
+    .optionsSection{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 50px;
+    }
+
+    .options{
+        height: 290px;
+        width: 280px;
+    }  
+    
+    .optionsDarkMode{
+        height: 290px;
+        width: 280px;
+    }
+
+    .boxHeader{
+        font-size: 26px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 26px;
+    }
+
+    .boxdescription{
+        font-size: 21px;
+    }
+
+    .boxdescriptionDarkMode{
+        font-size: 21px;
+    }
+
+    .midSection{
+        font-size: 45px;
+    }
+
+    .midSectionDarkMode{
+        font-size: 45px;
+    }
+}

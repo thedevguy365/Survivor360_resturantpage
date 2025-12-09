@@ -1,0 +1,1232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=DynaPuff:wght@400..700&display=swap');
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF6666;
+}
+
+.navBarDarkMode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+}
+
+.resturantLogo{
+    height: 130px;
+    width: 200px;
+    margin-left: -200px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    margin-left: 400px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 120px;
+    width: 160px;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    border: none;
+    transition: all 0.25s;
+}
+
+.contentDarkMode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FF6666;
+    height: 120px;
+    width: 160px;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    border: none;
+    transition: all 0.25s;
+}
+
+.menuBar{
+    position: relative;
+    display: inline-block;
+}
+
+.menuContent{
+    display: none;
+    position: absolute;
+    background-color: #FF6666;
+    min-width: 170px;
+    height: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menuContentDarkMode{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 170px;
+    height: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menuContent p{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    margin-bottom: -18px;
+    transition: all 0.25s;
+}
+
+.menuContentDarkMode p{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    margin-bottom: -18px;
+    transition: all 0.25s;
+}
+
+.menuContent p:hover{color: white; cursor: pointer; scale: 1.1;}
+
+.menuContentDarkMode p:hover{color: #FF6666; cursor: pointer; scale: 1.1;}
+
+.menuBar:hover .menuContent{
+    display: block;
+    background-color: #FF9999;
+}
+
+.menuBar:hover .menuContentDarkMode{
+    display: block;
+    background-color: gray;
+}
+
+.menuBar:hover .content{
+    color: white;
+    background-color: #FF9999;
+    cursor: pointer;
+}
+
+.menuBar:hover .contentDarkMode{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.content:hover{
+    color: white;
+    background-color: #FF9999;
+    cursor: pointer;    
+}
+
+.contentDarkMode:hover{
+    color: white;
+    background-color: rgb(155, 153, 153);
+    cursor: pointer;
+}
+
+.locateMenuContent{
+    display: none;
+    position: absolute;
+    background-color: #FF6666;
+    min-width: 162px;
+    height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.locateMenuContentDarkMode{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 162px;
+    height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.locateMenuContent a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    margin-top: 5px;
+    transition: all 0.25s;
+}
+
+.locateMenuContentDarkMode a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    margin-top: 5px;
+    transition: all 0.25s;
+}
+
+.locateMenuContent a:hover{color: white; cursor: pointer; scale: 1.1;}
+
+.locateMenuContentDarkMode a:hover{color: #FF6666; cursor: pointer; scale: 1.1;}
+
+.menuBar:hover .locateMenuContent{
+    display: block;
+    background-color: #FF9999;
+}
+
+.menuBar:hover .locateMenuContentDarkMode{
+    display: block;
+    background-color: gray;
+}
+
+.menuBar:hover .content{
+    color: white;
+    background-color: #FF9999;
+    cursor: pointer;
+}
+
+.menuBar:hover .contentDarkMode{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.contactMenuContent{
+    display: none;
+    position: absolute;
+    background-color: #FF6666;
+    min-width: 180px;
+    height: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.contactMenuContentDarkMode{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 180px;
+    height: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.contactMenuContent a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.25s;
+}
+
+.contactMenuContentDarkMode a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.25s;
+}
+.contactMenuContent a:hover{color: white; cursor: pointer; scale: 1.1;}
+
+.contactMenuContentDarkMode a:hover{color: #FF6666; cursor: pointer; scale: 1.1;}
+
+.menuBar:hover .contactMenuContent{
+    display: block;
+    background-color: #FF9999;
+}
+
+.menuBar:hover .contactMenuContentDarkMode{
+    display: block;
+    background-color: gray;
+}
+
+.menuBar:hover .content{
+    color: white;
+    background-color: #FF9999;
+    cursor: pointer;
+}
+
+.menuBar:hover .contentDarkMode{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.darkModeButton{
+    color: black;
+    font-size: 30px;
+    transition: all 0.25ms;
+}
+
+.darkModeButton:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.lightModeButton{
+    font-size: 30px;
+    transition: all 0.25ms;
+}
+
+.lightModeButton:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.menuButton{
+    display: none;
+    color: black;
+    font-size: 30px;
+    transition: all 0.25ms;    
+}
+
+.menuButton:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.menuButtonDarkMode{
+    display: none;
+    color: #FF6666;
+    font-size: 30px;
+    transition: all 0.25ms;    
+}
+
+.menuButtonDarkMode:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.auntyImage{
+    height: 28vh;
+    margin-left: 15vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px 5px #FF6666;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.pageContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 23vh;
+    height: 38vh;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.25s;
+}
+
+.pageContent:hover{
+    box-shadow: 0px 17px 16px 5px rgba(0, 0, 0, 0.2);
+
+    .auntyImage{
+        scale: 1.1;
+    }
+
+    .auntyImage{
+        scale: 1.1;
+    }
+}
+
+.contentText{
+    margin-left: 30%;
+    font-family: 'Nunito Sans';
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contentTextDarkMode{
+    margin-left: 30%;
+    font-family: 'Nunito Sans';
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+}
+
+.boldText{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.midSection{
+    background-color:#FF6666;
+    height: 150px;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Nunito Sans';
+    color: black;
+}
+
+.midSectionDarkMode{
+    background-color:#333333;
+    height: 150px;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Nunito Sans';
+    color: #FF6666;
+}
+
+.slider{
+    height: 100px;
+    width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+    background-color: #FF6666;
+}
+
+.sliderDarkMode{
+    height: 100px;
+    width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.slider div{
+    color: white;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slidingText1{
+    color: white;
+    animation: slide 10s linear infinite;
+}
+
+.slidingText2{
+    color: white; 
+}
+
+.slidingText1DarkMode{
+    color: white;
+    animation: slide 10s linear infinite;
+}
+
+.slidingText2DarkMode{
+    color: white; 
+}
+
+@keyframes slide {
+    0%{margin-top: -1500px;}
+    10%{margin-top: -1350px;}
+    20%{margin-top: -1200px;}
+    30%{margin-top: -1050px;}
+    40%{margin-top: -900px;}
+    50%{margin-top: -750px;}
+    60%{margin-top: -600px;}
+    70%{margin-top: -450px;}
+    80%{margin-top: -300px;}
+    90%{margin-top: -150px;}
+    100%{margin-top: -0px;}
+}
+
+.optionsSection{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #FF6666;
+}
+
+.optionsSectionDarkMode{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #333333;
+}
+
+.options{
+    height: 350px;
+    width: 400px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.optionsDarkMode{
+    height: 350px;
+    width: 400px;
+    background-color: black;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boxHeader{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 35px;
+    font-family: 'Nunito Sans';
+    color:black;
+}
+
+.boxHeaderDarkMode{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 35px;
+    font-family: 'Nunito Sans';
+    color:#FF6666;
+}
+
+.boxdescription{
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 25px;
+    width: 80%;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    color:gray; 
+}
+
+.boxdescriptionDarkMode{
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 25px;
+    width: 80%;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    color:#FF9999; 
+}
+
+.objectContainer > i{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.25s;
+    color: #FF6666;
+}
+
+.objectContainer i:hover{
+    color: #CC3333;
+    scale: 1.1;
+}
+
+.objectContainerDarkMode > i{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.25s;
+    color: #FF6666;
+}
+
+.objectContainerDarkMode i:hover{
+    color: white;
+    scale: 1.1;
+}
+
+.endSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #FF6666;
+    margin-top: 50px;
+}
+
+.endSectionDarkMode{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #333333;
+    margin-top: 50px;
+}
+
+.endSection p{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    color: white;
+}
+
+.endSectionDarkMode p{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    color: #FF6666;
+}
+
+.endSection i{
+    font-size: 20px;
+}
+
+.endSectionDarkMode i{
+    font-size: 20px;
+    color: #FF6666;
+}
+
+.overlayWindow{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.closeButton i{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    top: 20%;
+    right: 20%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.messageBox{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    position: fixed;
+    top: 40%;
+    right: 35%;
+    height: 300px;
+    width: 30%;
+    opacity: 100%;
+    background-color: rgb(69, 65, 65);
+    z-index: 2;
+}
+
+.overlayMessage{
+    width: 80%;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    color: #FF6666;
+}
+
+.overlayMessage2{
+    width: 80%;
+    font-size: 25px;
+    font-family: 'Nunito Sans'; 
+    margin-top: 15px;
+    color: #FF6666;
+}
+
+.callbutton{
+    height: 50px;
+    width: 150px;
+    background-color: #FF6666;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.callbutton a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+}
+
+.callbutton:hover{
+    background-color: #d43d3d;
+    scale: 1.1;
+}
+
+.callbutton a:hover{
+    color: white;
+}
+
+@media (max-width: 1475px){
+    .navLinks{
+        margin-left: 200px;
+        width: 45%;
+    }
+
+    .contentText{
+        margin-left: 26%;
+    }
+}
+
+@media (max-width: 1403px){
+
+    .resturantLogo{
+        margin-left: -150px;
+    }
+    .navLinks{
+        margin-left: 200px;
+        width: 47%;
+    }
+
+    .contentText{
+        font-size: 22px;
+        margin-left: 22%;
+    }
+
+    .contentTextDarkMode{
+        font-size: 22px;
+        margin-left: 22%; 
+    }
+
+    .boldText{
+        font-size: 26px;
+    }
+
+    .options{
+        width: 380px;
+    }
+}
+
+@media (max-width: 1295px){
+
+    .navLinks{
+        margin-left: 200px;
+        width: 55%;
+    }
+
+    .contentText{
+        font-size: 22px;
+        margin-left: 10%;
+    }
+
+    .boldText{
+        font-size: 26px;
+    }
+
+    .options{
+        height: 330px;
+        width: 330px;
+    } 
+    
+    .optionsDarkMode{
+        height: 330px;
+        width: 330px;
+    }
+
+    .boxHeader{
+        font-size: 28px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1125px){
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    .menuButtonDarkMode{
+        display: block;
+    }
+    .contentText{
+        font-size: 22px;
+        margin-left: 7%;
+    }
+
+    .contentTextDarkMode{
+        font-size: 22px;
+        margin-left: 7%; 
+    }
+
+    .boldText{
+        font-size: 26px;
+    }
+
+    .options{
+        height: 330px;
+        width: 330px;
+    }    
+
+    .boxHeader{
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 1100px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+
+    .contentText{
+        font-size: 22px;
+        margin-left: 7%;
+    }
+
+    .boldText{
+        font-size: 26px;
+    }
+
+    .options{
+        height: 300px;
+        width: 300px;
+    }  
+    
+
+    .boxHeader{
+        font-size: 26px;
+    }
+
+    .boxdescription{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 22px;
+        margin-left: 7%;
+    }
+
+    .boldText{
+        font-size: 26px;
+    }
+
+    .optionsSection{
+        height: 350px;
+    }
+
+    .options{
+        height: 260px;
+        width: 270px;
+    }
+
+    .optionsDarkMode{
+        height: 260px;
+        width: 270px;
+    }
+
+    .boxHeader{
+        font-size: 20px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 20px;
+    }
+
+    .boxdescription{
+        font-size: 18px;
+    }
+
+    .boxdescriptionDarkMode{
+        font-size: 18px;
+    }
+
+
+    .midSection{
+        font-size: 90px;
+    }
+
+    .midSectionDarkMode{
+        font-size: 90px;      
+    }
+}
+
+@media (max-width: 900px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 22px;
+        margin-left: 7%;
+    }
+
+    .boldText{
+        font-size: 26px;
+    }
+  
+      .optionsSection{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 50px;
+    }
+
+    .optionsSectionDarkMode{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 50px;        
+    }
+
+    .options{
+        height: 310px;
+        width: 350px;
+    }    
+
+    .optionsDarkMode{
+        height: 310px;
+        width: 350px;
+    }
+    .boxHeader{
+        font-size: 30px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 30px;
+    }
+
+    .boxdescription{
+        font-size: 25px;
+    }
+
+    .boxdescriptionDarkMode{
+        font-size: 25px;
+    }
+
+    .midSection{
+        font-size: 80px;
+    }
+
+    .midSectionDarkMode{
+        font-size: 80px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 20px;
+    }
+
+    .boldText{
+        font-size: 22px;
+    }
+  
+    .optionsSection{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 50px;
+    }
+
+    .options{
+        height: 310px;
+        width: 350px;
+    }    
+
+    .boxHeader{
+        font-size: 30px;
+    }
+
+    .boxdescription{
+        font-size: 25px;
+    }
+
+    .midSection{
+        font-size: 66px;
+    }
+}
+
+@media (max-width: 620px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 18px;
+    }
+
+    .contentTextDarkMode{
+        font-size: 18px;
+    }
+
+    .boldText{
+        font-size: 20px;
+    }
+
+  
+    .optionsSection{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 50px;
+    }
+
+    .optionsSectionDarkMode{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 50px;
+    }
+
+    .options{
+        height: 310px;
+        width: 350px;
+    }    
+
+    .optionsDarkMode{
+        height: 310px;
+        width: 350px;
+    }
+
+    .boxHeader{
+        font-size: 30px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 30px;
+    }
+
+    .boxdescription{
+        font-size: 25px;
+    }
+
+    .boxdescriptionDarkMode{
+        font-size: 25px;
+    }
+
+    .midSection{
+        font-size: 62px;
+    }
+
+    .midSectionDarkMode{
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 570px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 18px;
+    }
+
+    .boldText{
+        font-size: 20px;
+    }
+  
+      .optionsSection{
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 50px;
+    }
+
+    .options{
+        height: 310px;
+        width: 350px;
+    }    
+
+    .boxHeader{
+        font-size: 30px;
+    }
+
+    .boxdescription{
+        font-size: 25px;
+    }
+
+    .midSection{
+        font-size: 62px;
+    }
+}

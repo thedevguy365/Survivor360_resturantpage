@@ -1805,3 +1805,90 @@
         font-size: 35px;
     }
 }
+
+@media (max-width: 344px){
+
+    .pageContent{
+        height: 100vh;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    .auntyImage{
+        margin: 0;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+    .contentText{
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .contentTextDarkMode{
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .boldText{
+        font-size: 14px;
+    }
+  
+    .optionsSection{
+        height: 150vh;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        margin-left: 7.5%;
+        border-radius: 50px;
+    }
+
+    .optionsSectionDarkMode{
+        height: 150vh;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        margin-left: 7.5%;
+        border-radius: 50px;
+    }
+    .options{
+        height: 270px;
+        width: 240px;
+    }  
+    
+    .optionsDarkMode{
+        height: 270px;
+        width: 240px;
+    }
+
+    .boxHeader{
+        font-size: 22px;
+    }
+
+    .boxHeaderDarkMode{
+        font-size: 22px;
+    }
+
+    .boxdescription{
+        font-size: 17px;
+    }
+
+    .boxdescriptionDarkMode{
+        font-size: 17px;
+    }
+
+    .midSection{
+        font-size: 34px;
+    }
+
+    .midSectionDarkMode{
+        font-size: 35px;
+    }
+}
